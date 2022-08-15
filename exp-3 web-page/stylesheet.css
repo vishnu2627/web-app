@@ -1,0 +1,237 @@
+*{
+    margin: 0px;
+}
+h2
+{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.banner{
+    background-image: url("https://www.karunya.edu/sites/default/files/img/images/karunya-campus-view.jpg.pagespeed.ce.IyizWonRVf.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    border: 1px solid blue;
+}
+.about{
+    background-color: bisque;
+    color: black;
+}
+.about p{
+    text-align: justify;
+    padding: 24px;
+}
+.cse
+{
+    background-image: url("https://www.karunya.edu/sites/default/files/img/infra/webs/CST-WEB.jpg.pagespeed.ce.dXwXbqqNt_.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 33%;
+    float: left;
+    
+    
+
+}
+h3{
+    text-align: center;
+    color: black;
+}
+.lib
+{
+    background-image: url("https://www.karunya.edu/sites/default/files/img/2021/Library/LIB-IMG1.jpg.pagespeed.ce.RzO8onmtAP.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 33%;
+    float: left;
+    position: relative;
+    
+
+}
+.bio
+{
+    background-image: url("https://www.karunya.edu/sites/default/files/img/infra/webs/BIO-WEB.jpg.pagespeed.ce.d0VYBNwvjE.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 33%;
+    float: left;
+}
+.cse h4
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    opacity: 0.5;
+}
+.cse h4:hover{
+    opacity: 1;
+}
+.lib h4
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    opacity: 0.5; 
+    position: absolute;
+    bottom: 0px;
+    width: 100%; 
+}
+.lib h4:hover{
+    opacity: 1;
+}
+.bio h4
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    opacity: 0.5;  
+}
+.bio h4:hover{
+    opacity: 1;
+}
+.box4{
+    width: 50%;
+    height: 400px;
+    float: left;
+    background-color: bisque;
+
+}
+.box4 h4{
+    font-size:  25px;
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 80px;
+    
+
+}
+.box4 p{
+    margin: 0 80px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.cimg
+{
+    background-image: url("https://karunya.edu/sites/default/files/img/site/campus-life/front-campus-life-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    float: left;
+}
+.box6{
+    background-image: url("https://karunya.edu/sites/default/files/img/technology-mission/drone-for-agri.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 400px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+    width: 50%;
+    height: 80%;
+    background-color: white;
+}
+
+.form p{
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.form label{
+    width: 100%;
+    height: 30px;
+}
+
+label,input{
+    display: block;
+}
+
+input[type=text]{
+    width: 93%;
+    height: 26px;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    border: 3px solid #b5b5b5;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+/* Pseudo class */
+input[type=text]:focus{
+    background-color: white;
+    border: 3px solid #3675c8;
+    box-shadow: 0 0 10px #5793db;
+}
+
+input[type=password]{
+    width: 93%;
+    height: 26px;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    background-color: #d3d3d3;
+    border: 3px solid #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+
+/* Pseudo class */
+input[type=password]:focus{
+    background-color: white;
+    border: 3px solid #3675c8;
+    box-shadow: 0 0 10px #5793db;
+}
+
+input[type=submit]{
+    width: 100%;
+    height: 46px;
+    font-size: 18px;
+    background-color: #0166fe;
+    border: 3px solid #0c5ccf;
+    border-radius: 5px;
+    margin-top: 45px;
+    color: white;
+}
+.agri
+{
+    width: 50%;
+    height: 400px;
+    float: left;
+    background-color: bisque;
+}
+.agri h3{
+    font-size:  25px;
+    width: 80%;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+.agri p{
+    margin: 0 80px;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: justify;
+}
