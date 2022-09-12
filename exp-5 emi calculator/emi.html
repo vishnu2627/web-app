@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loan EMI Calculator</title>
+    <style>
+        h1 {
+            font-size: 35px;
+        }
+        h1 {
+            font-size: 21px;
+            margin-top: 20px;
+        }
+        .calculator {
+            width: 300px;
+            height: 450px;
+            background-color: white;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            padding: 20px 20px 20px 50px;
+            border-style:solid;
+            border-radius: 20px;
+            color:blue;
+        }
+        input {
+            padding: 7px;
+            width: 70%;
+            margin-top: 7px;
+        }
+        #d1
+        {
+            background-color:blue;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width:70%;
+        }
+        #d2
+        {
+            background-color:blue;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width:70%;
+        }
+        #d3
+        {
+            background-color:blue;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width:70%;
+        }
+        #d4
+        {
+            background-color:blue;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            width:70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>LOAN EMI CALCULATOR</h1>
+        Loan Amount (₹):<input id="amount" type="text"onkeyup="Calculate()"><br>
+        Annual Interest Rate: <input id="rate" type="text"onkeyup="Calculate()"><br>
+        Tenure(In Years) :<input id="years" type="text"onkeyup="Calculate()">
+        <div id="d1">Loan Amount:</div><br>
+       <div id="d2">Total interest:</div><br>
+       <div id="d3">EMI:</div><br>
+       <div id="d4">Total repayment:</div><br>
+       <script src="application.js"></script>
+     </div>
+    </body>
+    </html>
