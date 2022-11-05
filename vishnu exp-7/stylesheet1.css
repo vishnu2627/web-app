@@ -1,0 +1,98 @@
+.c1
+{
+background-image:url("https://images.pexels.com/photos/1721934/pexels-photo-1721934.jpeg?auto=compress&cs=tinysrgb&w=600");
+
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+width: 25%;
+float: left;
+position: relative;
+
+}
+
+.c1 h4
+{
+background-color: black;
+color: white;
+text-align: center;
+padding: 2%;
+opacity: 0.5;
+position: absolute;
+bottom: 1px;
+width: 97%;
+}
+.c2
+{
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUL9cGJKm-C5WqAfRaFHPIDW2ZKJL6xUoztw&usqp=CAU");
+
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+width: 25%;
+float: left;
+position: relative;
+
+}
+
+.c2 h4
+{
+background-color: black;
+color: white;
+text-align: center;
+padding: 2%;
+opacity: 0.5;
+position: absolute;
+bottom: 1px;
+width: 97%;
+}
+.c3
+{
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYcCzWv726HRRGENj5f1leXAa168km9wqgyw&usqp=CAU");
+
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+width: 25%;
+float: left;
+position: relative;
+
+}
+
+.c3 h4
+{
+background-color: black;
+color: white;
+text-align: center;
+padding: 2%;
+opacity: 0.5;
+position: absolute;
+bottom: 1px;
+width: 97%;
+}
+.c4
+{
+background-image:url("https://hpbd.name/uploads/worigin/2021/07/07/chocolate-birthday-wishes-cake-with-name-edit_2482a.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+height: 300px;
+width: 25%;
+float: left;
+position: relative;
+
+}
+
+.c4 h4
+{
+background-color: black;
+color: white;
+text-align: center;
+padding: 2%;
+opacity: 0.5;
+position: absolute;
+bottom: 1px;
+width: 97%;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+                
+            $('#btn').click(function(){
+                   let cc=330;
+                   let bc=280;
+                   let mc=250;
+                   let bf=550;
+
+                
+                   let num1 = parseInt($('#t1').val());
+                   let num2 = parseInt($('#t2').val());
+                   let num3 = parseInt($('#t3').val());
+                   let num4 = parseInt($('#t4').val());
+                   let sum = num1*cc + num2*bc + num3*mc + num4*bf;
+                   $('#result').val(sum);
+                   $('#box').html("Result: " + sum);
+                
+                $('#box').html(data3);
+            })
+        })
+    </script>
+</head>
+<body>
+    
+    <center><h2 style="background-color: red;">Cake World</h2>
+    <div class="c1"><h4>Color-cake Rs:330</h4></div>
+    <div class="c2"><h4>Brown-cake Rs:280</h4></div>
+    <div class="c3"><h4>Milk-cake Rs:250</h4></div>
+    <div class="c4"><h4>Milk-cake Rs:550</h4></div>
+   
+    
+    <span style="color: blue;">Color cake (Quantity):</span> <br>
+    <input type="text" id="t1" style="color: red;"><br>
+    <span style="color: blue;">Brown cake (Quantity):</span> <br>
+    <input type="text" id="t2" style="color: red;"><br>
+    <span style="color: blue;">Milk cake (Quantity):</span> <br>
+    <input type="text" id="t3" style="color: red;"><br>
+    <span style="color: blue;">Black Forest (Quantity):</span> <br>
+    <input type="text" id="t4" style="color: red;"><br><br><br>
+    <button id="btn" style="background-color: blue; color: white; width: 100px;">Place Order</button>
+    <hr>
+    <h3 style="color: green;">Purchase Order Bill!</h3>
+    <div style="background-color:green;color:white;width:100px;float:left;">Total Price:</div>
+    <div id="box" style="color: red;"></div>
+
+</body>
+</html>
