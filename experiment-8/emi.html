@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script>
+        var emicalculator = angular.module("emicalculator", []);
+    emicalculator.controller("emi", function ($scope) {
+
+        $scope.getrate = function () {
+            return $scope.amount * ($scope.intrestrate / 100) * $scope.term;
+        }
+        $scope.payable = function () {
+            return $scope.getrate() + $scope.amount;
+        }
+        $scope.monthly = function () {
+            return ($scope.amount + $scope.getrate()) / ($scope.term * 12);
+        }
+    });
+    
+    </script>
+    <style>
+        .outerdiv{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerdiv{
+            width:300px; 
+            height:450px;
+            color:white;
+            border: 3px solid rgb(0, 136, 255);
+            border-radius: 8px;
+            padding: 12px;
+        }
+        input{
+            width: 200px;
+            height: 34px;
+            border: 2px solid #c8c6c6;
+            border-radius: 8px;
+        }
+        button{
+            width: 96%;
+            height: 36px;
+            margin: 4px;
+            background-color: blue;
+            border: 2px solid blue;
+            border-radius: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body ng-app="emicalculator">
+
+    <div class="outerdiv">
+        <div ng-controller="emi" class="innerdiv">
+            <h1 style="text-align: center; color: blue; margin-top: 24px; margin-bottom: 10px;font-size: 24px;">LOAN EMI CALCULATOR</h1>
+            <p style="font-size: 18px; color: blue;margin: 10px 0;"> Loan Amount(Rs):</p>
+            <input type="number" ng-model="amount">
+            <p style="font-size: 18px; color: blue;margin: 10px 0;"> Annual Intrest rate(%)</p>
+            <input type="number" ng-model="intrestrate">
+            <p style="font-size: 18px; color: blue;margin: 10px 0;"> Tenture(Years)</p>
+            <input type="number" ng-model="term">
+        
+            <button style="color:white;">LOAN AMOUNT : {{amount|currency}}</button><br>
+            <button style="color:white;">TOTAL INTEREST  {{term}} YEARS: <span>{{getrate()|currency}}</span></button><br>
+            <button style="color:white;">EMI: {{monthly()|currency}}</button><br>
+        <button style="color:white;">TOTAL Repayment: {{payable()|currency}}</button><br>
+        
+        </div>
+    </div>
+</body>
+</html>
