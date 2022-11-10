@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script>
+        var app =angular.module('myapp',[])
+        app.controller('myctrl',function($scope)
+        {
+            $scope.patternMOB=/^[0-9]{10}$/
+        })
+    </script>
+</head>
+<body ng-app="myapp">
+    <h1 align="center";>USER REGISTRATION FORM</h1>
+    <form name='form' style="text-align: center;">
+    Name <span style="color: red;">*</span> <input type='text' name="Name" ng-model="name" required style="position: absolute; left: 900px;">
+    <span style='color:red' ng-show='form.Name.$dirty && form.Name.$error.required'>
+    Name is required..
+    </span>
+    <span style='color:green' ng-show='form.Name.$dirty && form.Name.$valid'  > ✓</span>
+    <br><br>
+    Password <span style="color: red;">*</span> <input type="password" name="password" ng-model="pass" required  style="position: absolute; left: 900px;" pattern="[a-zA-Z0-9]{6,16}">
+    <span style='color:red' ng-show='form.password.$dirty && form.password.$error.required'  style="position: absolute; left: 400px;">
+        Password is required
+    </span>
+    <span style='color:red' ng-show='form.password.$dirty && form.password.$invalid '  style="position: absolute; left: 800px;">
+        Please follow the password pattern
+    </span>
+    <span style='color:green' ng-show='form.password.$dirty && form.password.$valid'  style="position: absolute; left: 800px;"> ✓</span>
+        <br><br>
+    Age <span style="color:red">*</span> <input type="number" name="age" ng-model="age"  style="position: absolute; left: 900px;" required>
+    <span style='color:red' ng-show='form.age.$dirty && form.age.$invalid'  style="position: absolute; left: 400px;">
+        Age is required
+        </span>
+    <span style='color:green' ng-show='form.age.$dirty && form.age.$valid'  style="position: absolute; left: 400px;""> ✓</span>
+        <br><br>
+    Mobile Number <span style="color: red">*</span><input type="tel" name="phone" ng-model="phone" style="position: absolute; left: 900px;" required pattern="[0-9]{10}">
+    <span style='color:red' ng-show='form.phone.$dirty && form.phone.$invalid'  style="position: absolute; left: 400px;">
+        Enter valid phone number
+        </span>
+    <span style='color:green' ng-show='form.phone.$dirty && form.phone.$valid'  style="position: absolute; left: 400px;"> ✓</span>
+        <br><br>
+    Email <span style="color: red;">*</span> <input type="email" name="email" ng-model="email" required style="position: absolute; left: 900px;">
+    <span style='color:red' ng-show='form.email.$dirty && form.email.$error.required'  style="position: absolute; left: 400px;">
+        Email is required
+        </span>
+    <span style='color:red' ng-show='form.email.$dirty && form.email.$error.email'  style="position: absolute; left: 400px;">
+        Email Format is wrong
+        </span>
+    <span style='color:green' ng-show='form.email.$dirty && form.email.$valid'  style="position: absolute; left: 400px;"> ✓</span>
+        <br><br>
+    Gender <span style="color: red;">*</span>   <input type="radio" name="Gender" value="Male" style="position: absolute; left: 900px;"> <span style="position: absolute; left: 940px;">Male</span> <input type="radio" name="Gender" value="Female" style="position: absolute; left: 1000px;"> <span style="position: absolute; left: 1040px;">Female</span>
+    <br><br>
+    <span style='color:red' ng-show='form.email.$dirty && form.email.$error.required' style="position: relative; left: 70px;">
+        Email is required
+        </span>
+    <span style='color:red' ng-show='form.email.$dirty && form.email.$error.email' style="position: relative; left: 70px;">
+        Email Format is wrong
+        </span>
+    <span style='color:green' ng-show='form.email.$dirty && form.email.$valid' style="position: relative; left: 70px;"> ✓</span>
+    State <span style="color: red">*</span> 
+    <select name="state"  style="position: absolute; left: 900px;">
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Karnataka">Karnataka</option>
+    </select> 
+    <br><br>
+    <button ng-disabled="form.Name.$invalid" ng-click="submit()" >submit</button>
+    </form>
+    </body>
+</html>
